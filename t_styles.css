@@ -1,0 +1,450 @@
+* {
+    padding: 0;
+    /*removing deafualt padding*/
+    margin: 0;
+    /*removing default margin*/
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+
+}
+
+header {
+    background-color: #05177c;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    /*padding : vertical horizontal */
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-link {
+    transition: 0.4s ease;
+    /* background-color: #8b8888; */
+}
+
+.nav-link:hover {
+    color: dodgerblue;
+    /* background-color: #8b8888; */
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    border: solid #8b8888;
+    border-radius: 5px;
+}
+
+.hamburger:hover {
+    background-color: #89888b93;
+    width: 40px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    /* margin: vertical horizontal*/
+    /* TODO: possibly remove*/
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    /* z-index: 1001; */
+    background-color: antiquewhite;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact {
+    background-image: url('public/sonic_run.jpg');
+    background-size: cover;
+    /* Makes the image cover the entire div */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    width: 100%;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Black color with 50% opacity */
+    background-blend-mode: overlay;
+    /* Blends the color with the image */
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    padding-left: 40px;
+    padding-top: 100px;
+    /* padding: 100px 0; */
+    gap: 20px;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    max-width: 300px;
+}
+
+.contact p {
+    font-size: 1.5rem;
+    display: inline;
+
+}
+
+
+.contact-us {
+    display: inline-block;
+    text-transform: capitalize;
+    background-color: aliceblue;
+
+    padding: 5px 10px;
+    /* width: inherit; */
+    border-radius: 5px;
+    max-width: fit-content;
+}
+
+.contact-us p {
+    display: inline-block;
+
+}
+
+.contact-us:hover {
+    background-color: rgb(207, 214, 220);
+    ;
+    cursor: pointer;
+
+}
+
+.info {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 30px 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card-01 {
+    display: flex;
+    border: 5px solid #ccc;
+    width: 300px;
+    flex-direction: column;
+    /* Stack image and text vertically */
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-container {
+    flex: 1;
+    /* flex: 1; Take up half the card's height */
+    height: 50%;
+    /* flex: 0 0 20%; */
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+    /* Optional: Placeholder background color */
+}
+
+.image-container img {
+    width: 100%;
+    /* Image scales to fit the width */
+    height: 100%;
+    /* Image scales to fit the height */
+    object-fit: cover;
+    /* Ensures the image is cropped properly */
+    object-position: top;
+}
+
+.text-container {
+    flex: 1;
+    /* Take up the other half of the card's height */
+    padding: 10px;
+    text-align: center;
+    display: column;
+    align-items: center;
+    /* Center text vertically */
+    justify-content: center;
+    /* Center text horizontally */
+    font-size: 1.4rem;
+    color: #FFF;
+    background-color: #474749;
+}
+
+.text-container a {
+    color: rgb(144, 113, 177);
+}
+
+.text-container a:hover {
+    text-decoration: underline;
+}
+
+.game-container-01 {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+
+    height: 800px;
+    /* border: 2px solid #000; */
+    align-items: center;
+}
+
+.game-subcontainer-01 {
+    /* position: relative; */
+    display: inline-block;
+    border: 1px solid #05177c;
+    /* height: 600px; */
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    /* overflow: hidden; */
+
+}
+
+.game-img img {
+    /* top: 30px; */
+    position: relative;
+    width: 100%;
+    /* max-height: 400px; */
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    /* margin-top: 50px; */
+    /* Move the image 50px down */
+    display: block;
+    /* Ensures no extra space below the image */
+    /* max-width: 1000px; */
+
+    /* max-width: 200px; */
+    /* min-height: 200px; */
+
+    background-color: #05177c;
+    /* z-index: 2; */
+
+    /* background-image: url('public/sonic_heroes_team_sonic.png'); */
+}
+
+.game-desc {
+    position: relative;
+    /* top: 200px; */
+    width: 100%;
+    /* aspect-ratio: 16 / 9; */
+    background-color: rgb(4, 117, 117);
+    /* z-index: 1; */
+    /* align-items: center; */
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.5) url('public/grey_bg.png') center/cover no-repeat;
+    background-blend-mode: overlay;
+    /* Makes the image semi-transparent */
+    padding: 20px 10px;
+}
+
+.game-desc h3 {
+    font-size: 2.5rem;
+}
+
+.game-desc p {
+    font-size: 2.5rem;
+
+}
+
+
+.game-anchor-like-div {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7f8388;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    font-size: 2.5rem;
+}
+
+.game-anchor-like-div:hover {
+    background-color: #3d4043;
+}
+
+.desc-01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center items vertically (optional if height is set) */
+    align-items: center;
+    /* Center items horizontally */
+    text-align: center;
+    /* Center text inside the h3 */
+    padding: 20px;
+}
+
+.desc-01 div {
+    max-width: 400px;
+}
+
+.desc-01 {
+    font-size: 1.6rem;
+}
+
+.section-container {
+    background-color: #05177c;
+    padding: 4.5px;
+}
+
+.container {
+    max-width: 640px;
+
+    width: 100%;
+    padding-right: 17.5px;
+    padding-left: 17.5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.contact-us-01 {
+    display: inline-block;
+    text-transform: capitalize;
+    background-color: rgb(17, 98, 169);
+
+    padding: 5px 10px;
+    /* width: inherit; */
+    border-radius: 5px;
+    max-width: fit-content;
+    border: 1px solid rgb(7, 71, 128);
+}
+
+.contact-us-01:hover {
+    background-color: rgba(17, 98, 169, 0.632);
+
+}
+
+.container {
+    display: flex;
+    /* Enable Flexbox */
+    flex-direction: column;
+    /* Stack child elements vertically */
+    justify-content: center;
+    /* Center items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    /* height: 100vh; */
+    /* Optional: Full viewport height for demonstration */
+    text-align: center;
+}
+
+.container-01 {
+    position: relative;
+    width: 100%;
+    padding-right: 17.5px;
+    padding-left: 17.5px;
+    padding: 30px 0px;
+    color: #FFF
+}
+
+.container-02{
+    padding-bottom: 40px ;
+}
+
+.button {
+    padding: .5rem 2rem;
+    font-size: 1.125rem;
+    line-height: 2;
+    border-radius: 0;
+    margin-top: 3rem !important;
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.button:hover{
+    background-color: #8a8b8c;
+}
+
+footer{
+    color: #f8f9fa !important;
+    background-color: #000;
+}
+
+@media(max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        /* display: block; */
+        position: fixed;
+        /* left: -100%; */
+        left: 0px;
+        top: -100%;
+        gap: 0;
+        flex-direction: column;
+        background-color: #05177c;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        display: block;
+        top: 70px;
+        left: 0px;
+    }
+
+}

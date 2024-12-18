@@ -1,0 +1,177 @@
+body {
+    background-color: f0f0f0;
+    margin: 10px;
+}
+
+* {
+    border: 1px solid rgb(8, 4, 4);
+}
+
+h1,
+h2 {
+    color: rgb(4, 98, 98);
+}
+
+p {
+    font-size: 2rem;
+}
+strong {
+    background-color: rgba(204, 127, 255, 0.321);
+    /* background-color: rgba(204, 127, 255, 1); */
+}
+
+.selector {
+    color: blueviolet;
+}
+
+#heading {
+    text-transform: uppercase;
+    text-decoration: line-through;
+}
+
+.selector p strong {
+    text-transform: uppercase;
+}
+
+span {
+    color: rgb(2, 11, 18);
+}
+
+a {
+    color: rgb(71, 7, 60);
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: green;
+}
+
+
+
+.large-text {
+    font-size: 2em;
+    /* 1.5 times 8 = 12 */
+}
+
+.input-with-bg {
+    background-image: url("public/iron_man_core.jpg");
+    /* URL of the image */
+    background-size: cover;
+    /* Scales the image to cover the input */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    padding-left: 10px;
+    /* Adjust this based on the size of the image */
+
+    background-color: rgba(255, 255, 255, .85);
+    /* Adjust the opacity by changing 0.5 */
+    background-blend-mode: overlay;
+
+    background-position: center;
+
+}
+
+.container1 {
+    padding: 30px;
+    /* height:30px; */
+
+    background-image: url("public/iron_man_core.jpg");
+    /* URL of the image */
+    background-size: cover;
+    background-position: center;
+
+}
+
+#intro {
+    text-align: center;
+
+}
+
+#subintro {
+    text-align: right;
+    margin: 0 60px;
+    padding: 0 60px;
+
+}
+
+div.red-border {
+    border-width: 5px;
+    border-style: dotted;
+    border-color: rgb(11, 125, 224);
+}
+
+.rounded-corners {
+    border-radius: 30px;
+    /* height: 200px; */
+    gap: 5px;
+    flex: auto;
+}
+
+.rounded-corners-1 h1{
+    border-radius: 5px 20px 60px 5px;
+    gap: 5px;
+    width: 20%;
+}
+.div-01, .div-01 div{
+    /* display: inline; */
+    border: 2.5px solid rebeccapurple;
+    border-radius: 5px 20px 60px 5px;
+    gap: 1px;
+    /* width: 20%; */
+    overflow: hidden;
+
+}
+
+.width-01{
+    width: 50%;
+    height: 10%;
+}
+
+#box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-image: url("public/sonic-png-28.png");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 0 50% 0 50%;
+ /* box-shadow: x    y    blur inset/no-inset   color */
+    box-shadow: 15px 15px 10px inset rgb(9, 55, 205); 
+}
+
+#box-01 {
+    width: 200px;
+    height: 200px;
+    border:  2px dashed palevioletred;
+
+    /* padding: 10px; */
+ /* padding: top right bottom left ; clockwise */
+    padding: 10px 10px 10px 30px;
+ /* margin: top right bottom left ; clockwise */
+    margin: 30px  10px 10px 30px;
+    /* Automatically centers an element */
+    margin: auto; 
+    /* display: block; */
+
+}
+#inline {
+    display: inline-block;
+    border: 2px solid blue;
+    max-width : 300px;
+
+}
+
+#box-02 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 20% auto 20% auto;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, .7);
+    /* opacity: .5; */
+}
